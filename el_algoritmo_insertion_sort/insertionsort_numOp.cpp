@@ -14,12 +14,9 @@ void insertionsort(vector<int>& V) {
         int j = i - 1;
         while (j >= 0 and V[j+1] < V[j]) {
             ++NUM_OP;
-            swap(V[j], V[j+1]);
-            ++NUM_OP;
+            swap(V[j], V[j+1]); ++NUM_OP;
             --j;
-        }
-    }
-}
+        } } }
 
 int main() {
     cin >> n;
